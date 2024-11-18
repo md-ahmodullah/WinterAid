@@ -16,9 +16,9 @@ export default function About() {
           impactful change.
         </p>
       </div>
-      <div className="about flex justify-center text-black">
+      <div className="about flex justify-center text-deepTeal">
         <NavLink
-          to="/mission"
+          to="/"
           className="flex items-center gap-4 py-4 px-10 bg-gray-100 rounded-l-xl"
         >
           <div>

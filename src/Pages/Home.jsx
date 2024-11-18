@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import About from "../Components/About";
 import Banner from "../Components/Banner";
+import HowItWorks from "../Components/HowItWorks";
 export default function Home() {
   return (
     <>
@@ -10,6 +11,9 @@ export default function Home() {
       <div className="mb-16">
         <About />
         <Outlet />
+      </div>
+      <div>
+        <HowItWorks />
       </div>
     </>
   );

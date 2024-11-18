@@ -7,7 +7,7 @@ export default function Mission() {
           className="max-w-lg rounded-lg shadow-2xl"
         />
         <div className="w-1/3">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl font-semibold text-deepTeal">
             Empowering lives through compassionate support
           </h1>
           <p className="py-6 text-gray-500">
@@ -15,7 +15,9 @@ export default function Mission() {
             comprehensive services, fostering resilience, dignity, and positive
             community impact for a brighter future.
           </p>
-          <button className="btn bg-lightCoral rounded-full">Learn More</button>
+          <button className="btn bg-lightCoral rounded-full text-white">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

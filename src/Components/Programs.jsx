@@ -8,7 +8,7 @@ export default function Programs() {
             className="max-w-lg rounded-lg shadow-2xl"
           />
           <div className="w-1/3">
-            <h1 className="text-3xl font-semibold">
+            <h1 className="text-3xl font-semibold text-deepTeal">
               Offering diverse programs focused on education
             </h1>
             <p className="py-6 text-gray-500">
@@ -16,7 +16,7 @@ export default function Programs() {
               environment, and community development for sustainable positive
               impact.
             </p>
-            <button className="btn bg-lightCoral rounded-full">
+            <button className="btn bg-lightCoral rounded-full text-white">
               Learn More
             </button>
           </div>

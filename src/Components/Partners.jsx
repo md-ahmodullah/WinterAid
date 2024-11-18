@@ -7,7 +7,7 @@ export default function Partners() {
           className="max-w-lg rounded-lg shadow-2xl"
         />
         <div className="w-1/3">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl font-semibold text-deepTeal">
             Collaborating with like-minded organizations
           </h1>
           <p className="py-6 text-gray-500">
@@ -15,7 +15,9 @@ export default function Partners() {
             individuals to maximize resources and extend our reach for greater
             impact.
           </p>
-          <button className="btn bg-lightCoral rounded-full">Learn More</button>
+          <button className="btn bg-lightCoral rounded-full text-white">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

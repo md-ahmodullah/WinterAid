@@ -8,7 +8,7 @@ export default function DonateNow() {
             className="max-w-lg rounded-lg shadow-2xl"
           />
           <div className="w-1/3">
-            <h1 className="text-3xl font-semibold">
+            <h1 className="text-3xl font-semibold text-deepTeal">
               Every contribution directly supports our causes
             </h1>
             <p className="py-6 text-gray-500">
@@ -16,7 +16,7 @@ export default function DonateNow() {
               comprehensive services, fostering resilience, dignity, and
               positive community impact for a brighter future.
             </p>
-            <button className="btn bg-lightCoral rounded-full">
+            <button className="btn bg-lightCoral rounded-full text-white">
               Learn More
             </button>
           </div>
