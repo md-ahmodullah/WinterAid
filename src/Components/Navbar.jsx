@@ -15,7 +15,7 @@ export default function Navbar() {
   );
   return (
     <div className="bg-deepTeal font-poppins">
-      <div className="navbar w-11/12 mx-auto">
+      <div className="navbar w-11/12 mx-auto py-3">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

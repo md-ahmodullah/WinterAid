@@ -1,0 +1,16 @@
+import { Outlet } from "react-router-dom";
+import About from "../Components/About";
+import Banner from "../Components/Banner";
+export default function Home() {
+  return (
+    <>
+      <div className="bg-gradient-to-t from-gray-100 to-white">
+        <Banner />
+      </div>
+      <div className="mb-16">
+        <About />
+        <Outlet />
+      </div>
+    </>
+  );
+}

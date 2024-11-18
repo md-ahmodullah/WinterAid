@@ -9,3 +9,9 @@ a.active {
   color: peachpuff;
   font-size: 16px;
 }
+
+.about a.active {
+  background-color: lightcoral;
+  text-decoration: none;
+  color: white;
+}
