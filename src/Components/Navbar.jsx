@@ -8,9 +8,9 @@ export default function Navbar() {
   const links = (
     <>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/contact">Campaigns</NavLink>
-      <NavLink to="/about">Dashboard</NavLink>
-      <NavLink to="/about">How to Help</NavLink>
+      <NavLink to="/campaigns">Campaigns</NavLink>
+      <NavLink to="/dashboard">Dashboard</NavLink>
+      <NavLink to="/how-to-help">How to Help</NavLink>
     </>
   );
   return (
