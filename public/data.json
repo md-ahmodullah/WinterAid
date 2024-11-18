@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Warmth for Chittagong Hills",
+    "image": "https://i.ibb.co.com/XJfWkDQ/image11.png",
+    "description": "Donate warm clothes to the underprivileged in the remote areas of Chittagong Hills.",
+    "status": "Active",
+    "contactInfo": "chittagong.aid@example.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 2,
+    "title": "Dhaka Winter Care Drive",
+    "image": "https://i.ibb.co.com/1dkx7fH/image9.jpg",
+    "description": "Helping slum dwellers and low-income families in Dhaka stay warm this winter.",
+    "status": "Active",
+    "contactInfo": "dhaka.donation@example.com",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Sylhet Smiles Campaign",
+    "image": "https://i.ibb.co.com/JzHjVXV/image8.jpg",
+    "description": "Provide winter clothing to tea garden workers and their families in Sylhet.",
+    "status": "Active",
+    "contactInfo": "sylhet.support@example.com",
+    "division": "Sylhet"
+  },
+  {
+    "id": 4,
+    "title": "Barisal Blanket Initiative",
+    "image": "https://i.ibb.co.com/PG07xsb/image5.jpg",
+    "description": "Support fishing communities in Barisal with blankets and warm clothing.",
+    "status": "Upcoming",
+    "contactInfo": "barisal.campaign@example.com",
+    "division": "Barisal"
+  },
+  {
+    "id": 5,
+    "title": "Rajshahi Warm Hearts Program",
+    "image": "https://i.ibb.co.com/S7J5F0s/image6.jpg",
+    "description": "Help rural communities in Rajshahi battle the harsh winter with your donations.",
+    "status": "Completed",
+    "contactInfo": "rajshahi.contact@example.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 6,
+    "title": "Khulna Care & Warmth Drive",
+    "image": "https://i.ibb.co.com/0XMjKpp/image7.jpg",
+    "description": "Provide winter clothing to families affected by extreme cold in Khulna.",
+    "status": "Active",
+    "contactInfo": "khulna.support@example.com",
+    "division": "Khulna"
+  },
+  {
+    "id": 7,
+    "title": "Mymensingh Winter Relief",
+    "image": "https://i.ibb.co.com/X33JDW2/images12.jpg",
+    "description": "Help vulnerable communities in Mymensingh fight the cold with warm clothing donations.",
+    "status": "Active",
+    "contactInfo": "mymensingh.help@example.com",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 8,
+    "title": "Rangpur Warmth Campaign",
+    "image": "https://i.ibb.co.com/3c6j9Vz/image10.jpg",
+    "description": "Provide essential winter items to low-income families in Rangpur.",
+    "status": "Completed",
+    "contactInfo": "rangpur.support@example.com",
+    "division": "Rangpur"
+  },
+  {
+    "id": 9,
+    "title": "Comilla Care Drive",
+    "image": "https://i.ibb.co.com/RykfwXz/image4.jpg",
+    "description": "Distribute warm clothing to struggling families in Comilla during harsh winters.",
+    "status": "Upcoming",
+    "contactInfo": "comilla.campaign@example.com",
+    "division": "Comilla"
+  },
+  {
+    "id": 10,
+    "title": "Noakhali Blanket Project",
+    "image": "https://i.ibb.co.com/Q8wckFN/image3.jpg",
+    "description": "Support coastal areas of Noakhali by donating warm clothing and blankets.",
+    "status": "Active",
+    "contactInfo": "noakhali.support@example.com",
+    "division": "Noakhali"
+  },
+  {
+    "id": 11,
+    "title": "Jessore Winter Drive",
+    "image": "https://i.ibb.co.com/8KsZx0T/image2.jpg",
+    "description": "Provide winter clothing to underserved communities in Jessore.",
+    "status": "Active",
+    "contactInfo": "jessore.aid@example.com",
+    "division": "Jessore"
+  },
+  {
+    "id": 12,
+    "title": "Faridpur Winter Aid",
+    "image": "https://i.ibb.co.com/Hq0dNwW/image1.jpg",
+    "description": "Help children and elderly residents in Faridpur with your donations of winter clothes.",
+    "status": "Upcoming",
+    "contactInfo": "faridpur.donation@example.com",
+    "division": "Faridpur"
+  }
+]

@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        myFont: [],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        primary: "",
+        deepTeal: "#00796B",
+        softPeach: "#FFDAB9",
+        lightCoral: "#FF6F61",
+        faWhite: "#FAFAFA ",
       },
     },
   },

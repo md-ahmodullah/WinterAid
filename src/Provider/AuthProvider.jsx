@@ -2,7 +2,6 @@ import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   onAuthStateChanged,
-  sendEmailVerification,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -40,10 +39,6 @@ export default function AuthProvider({ children }) {
       photoURL: "https://example.com/jane-q-user/profile.jpg",
     });
   };
-  // Email Verification
-  const verifyEmail = () => {
-    return sendEmailVerification(auth.currentUser);
-  };
   // password reset email
   const passwordResetMailSend = (email) => {
     return sendPasswordResetEmail(auth, email);
@@ -62,7 +57,6 @@ export default function AuthProvider({ children }) {
     setUser,
     createUser,
     loginUser,
-    verifyEmail,
     logOut,
     signInWithGoogle,
     updateProfile,
