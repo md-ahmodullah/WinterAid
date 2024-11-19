@@ -2,13 +2,15 @@ export default function Instructions() {
   return (
     <>
       <div>
-        <h2 className="text-4xl font-bold text-deepTeal text-center pb-5">
-          Donation Steps
+        <h2 className="text-5xl font-semibold text-deepTeal text-center pb-5 w-full lg:w-3/5 mx-auto">
+          Instructions for <span className="text-lightCoral">donation</span> and
+          How it <span className="text-lightCoral">works</span>
         </h2>
-        <p className="text-center text-gray-500">
-          Providing a general overview of the donation process
+        <p className="text-center text-gray-500 w-full lg:w-1/2 mx-auto">
+          Providing instructions for donation, information about collection
+          points, and list supported divisions
         </p>
-        <ul className="steps steps-vertical lg:steps-horizontal text-deepTeal font-semibold py-6 lg:py-9">
+        <ul className="steps steps-vertical lg:steps-horizontal text-black font-semibold py-6 lg:py-9">
           <li className="step step-accent">Step-1 : Browse Campaigns</li>
           <li className="step step-accent">Step-2 : Register</li>
           <li className="step">Step-3 : View Campaign Details</li>
@@ -16,7 +18,7 @@ export default function Instructions() {
           <li className="step">Step-5 : Submit</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 py-5">
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
@@ -26,13 +28,12 @@ export default function Instructions() {
             />
           </figure>
           <div className="text-center flex flex-col flex-grow gap-3 items-center p-5">
-            <h2 className="text-lg font-semibold text-deepTeal">
+            <h2 className="text-lg font-semibold text-black">
               Browse Campaigns
             </h2>
             <p className="text-sm text-gray-500 text-justify">
               Choose a campaign that resonates with your donation goals,
-              supporting those in need by providing essential winter clothing to
-              vulnerable communities across different regions of Bangladesh.
+              supporting those in need by providing essential winter cloths.
             </p>
           </div>
           <div className="card-actions pb-5">
@@ -50,7 +51,7 @@ export default function Instructions() {
             />
           </figure>
           <div className="text-center flex flex-col flex-grow gap-3 items-center p-5">
-            <h2 className="text-lg font-semibold text-deepTeal">
+            <h2 className="text-lg font-semibold text-black">
               Login or Sign Up
             </h2>
             <p className="text-sm text-gray-500 text-justify">
@@ -74,13 +75,12 @@ export default function Instructions() {
             />
           </figure>
           <div className="text-center flex flex-col flex-grow gap-3 items-center p-5">
-            <h2 className="text-lg font-semibold text-deepTeal">
+            <h2 className="text-lg font-semibold text-black">
               View Campaign Details
             </h2>
             <p className="text-sm text-gray-500 text-justify">
               Check the campaigns specific needs, including the type of clothing
-              and the quantity required, to ensure your donation meets the
-              listed requirements effectively.
+              and the quantity required, to ensure your effective donation .
             </p>
           </div>
           <div className="card-actions pb-5">
@@ -98,13 +98,13 @@ export default function Instructions() {
             />
           </figure>
           <div className="text-center flex flex-col flex-grow gap-3 items-center p-5">
-            <h2 className="text-lg font-semibold text-deepTeal">
+            <h2 className="text-lg font-semibold text-black">
               Fill Donation Form
             </h2>
             <p className="text-sm text-gray-500 text-justify">
               Provide your donation details, including item type, quantity,
-              pickup location, and any additional notes to help streamline the
-              collection process.
+              pickup location, and any notes to help streamline the collection
+              process.
             </p>
           </div>
           <div className="card-actions pb-5">
@@ -122,7 +122,7 @@ export default function Instructions() {
             />
           </figure>
           <div className="text-center flex flex-col flex-grow gap-3 items-center p-5">
-            <h2 className="text-lg font-semibold text-deepTeal">
+            <h2 className="text-lg font-semibold text-black">
               Submit Your Donation
             </h2>
             <p className="text-sm text-gray-500 text-justify">
@@ -137,7 +137,7 @@ export default function Instructions() {
           </div>
         </div>
       </div>
-      <div role="alert" className="alert alert-warning my-16">
+      <div role="alert" className="alert alert-warning my-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 shrink-0 stroke-current"

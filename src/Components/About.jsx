@@ -5,8 +5,8 @@ import { TbTargetArrow } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
 export default function About() {
   return (
-    <section className="w-10/12 mx-auto my-6 md:my-12 lg:my-16">
-      <div className="w-full lg:w-3/5 mx-auto text-center space-y-4 md:space-y-6 pb-8 lg:pb-16">
+    <section className="w-10/12 mx-auto my-16">
+      <div className="w-full lg:w-3/5 mx-auto text-center space-y-4 md:space-y-6 pb-5 lg:pb-8">
         <h1 className="text-2xl md:text-3xl lg:text-5xl text-deepTeal font-semibold">
           Commitment to <span className="text-lightCoral">impactful</span>{" "}
           change and <span className="text-lightCoral">community</span> welfare

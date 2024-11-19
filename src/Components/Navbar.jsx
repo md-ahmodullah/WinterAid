@@ -67,8 +67,8 @@ export default function Navbar() {
             </div>
           ) : (
             <Link
-              to="/"
-              className="btn btn-sm md:btn-md bg-[#FFDAB9] text-deepTeal"
+              to="/login"
+              className="btn btn-sm md:btn-md bg-lightCoral  text-faWhite border-none"
             >
               Login
             </Link>

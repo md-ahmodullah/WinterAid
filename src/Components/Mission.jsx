@@ -7,10 +7,10 @@ export default function Mission() {
           className="w-full lg:max-w-lg rounded-lg shadow-2xl"
         />
         <div className="w-full lg:w-1/3 pt-10">
-          <h1 className="text-xl md:text-3xl font-semibold text-deepTeal">
+          <h1 className="text-xl md:text-3xl font-semibold text-black">
             Empowering lives through compassionate support
           </h1>
-          <p className="pt-3 pb-6 md:py-6 text-gray-500 text-sm">
+          <p className="pt-3 pb-6 md:py-6 text-gray-500 text-base">
             Our mission is to empower individuals and families through
             comprehensive services, fostering resilience, dignity, and positive
             community impact for a brighter future.

@@ -11,7 +11,7 @@ a.active {
 }
 
 .about a.active {
-  background-color: lightcoral;
+  background-color: #ff6f61;
   text-decoration: none;
   color: white;
 }
