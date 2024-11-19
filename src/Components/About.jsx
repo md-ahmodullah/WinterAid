@@ -5,21 +5,21 @@ import { TbTargetArrow } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
 export default function About() {
   return (
-    <section className="w-10/12 mx-auto my-12">
-      <div className="w-3/5 mx-auto text-center space-y-6 pb-16">
-        <h1 className="text-5xl text-deepTeal font-semibold">
+    <section className="w-10/12 mx-auto my-6 md:my-12 lg:my-16">
+      <div className="w-full lg:w-3/5 mx-auto text-center space-y-4 md:space-y-6 pb-8 lg:pb-16">
+        <h1 className="text-2xl md:text-3xl lg:text-5xl text-deepTeal font-semibold">
           Commitment to <span className="text-lightCoral">impactful</span>{" "}
           change and <span className="text-lightCoral">community</span> welfare
         </h1>
-        <p className="text-lg text-gray-500 w-3/5 mx-auto">
+        <p className="text-sm lg:text-lg text-gray-500 w-full lg:w-3/5 mx-auto">
           Discover our commitment to social welfare, ethical governance, and
           impactful change.
         </p>
       </div>
-      <div className="about flex justify-center text-deepTeal">
+      <div className="about flex flex-col lg:flex-row justify-center text-deepTeal">
         <NavLink
           to="/"
-          className="flex items-center gap-4 py-4 px-10 bg-gray-100 rounded-l-xl"
+          className="flex items-center gap-4 py-4 px-10 bg-gray-100 rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl"
         >
           <div>
             <TbTargetArrow className="text-4xl" />
@@ -55,7 +55,7 @@ export default function About() {
         </NavLink>
         <NavLink
           to="/donate-now"
-          className="flex items-center gap-6 py-4 px-10 bg-gray-100 rounded-r-xl"
+          className="flex items-center gap-6 py-4 px-10 bg-gray-100 rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl"
         >
           <div>
             <BiSolidDonateHeart className="text-4xl" />

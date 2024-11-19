@@ -1,17 +1,17 @@
 export default function Programs() {
   return (
     <>
-      <div className="hero bg-base-200 w-10/12 mx-auto rounded-xl px-20 py-10">
-        <div className="hero-content flex-col lg:flex-row-reverse justify-between">
+      <div className="hero bg-base-200 w-10/12 mx-auto rounded-xl p-6 md:p-10">
+        <div className="flex flex-col lg:flex-row-reverse justify-between">
           <img
             src="https://i.ibb.co.com/Q8wckFN/image3.jpg"
-            className="max-w-lg rounded-lg shadow-2xl"
+            className="w-full lg:max-w-lg rounded-lg shadow-2xl"
           />
-          <div className="w-1/3">
-            <h1 className="text-3xl font-semibold text-deepTeal">
+          <div className="w-full lg:w-1/3 pt-10">
+            <h1 className="text-xl md:text-3xl font-semibold text-deepTeal">
               Offering diverse programs focused on education
             </h1>
-            <p className="py-6 text-gray-500">
+            <p className="pt-3 pb-6 md:py-6 text-gray-500 text-sm">
               Offering diverse programs focused on education, healthcare,
               environment, and community development for sustainable positive
               impact.

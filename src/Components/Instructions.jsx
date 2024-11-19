@@ -8,7 +8,7 @@ export default function Instructions() {
         <p className="text-center text-gray-500">
           Providing a general overview of the donation process
         </p>
-        <ul className="steps steps-vertical lg:steps-horizontal text-deepTeal font-semibold py-12">
+        <ul className="steps steps-vertical lg:steps-horizontal text-deepTeal font-semibold py-6 lg:py-9">
           <li className="step step-accent">Step-1 : Browse Campaigns</li>
           <li className="step step-accent">Step-2 : Register</li>
           <li className="step">Step-3 : View Campaign Details</li>
@@ -16,11 +16,11 @@ export default function Instructions() {
           <li className="step">Step-5 : Submit</li>
         </ul>
       </div>
-      <div className="grid grid-cols-5 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="https://i.ibb.co.com/C28NJMj/browse-removebg-preview.png"
               alt="Shoes"
               className="rounded-xl"
             />
@@ -44,7 +44,7 @@ export default function Instructions() {
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="https://i.ibb.co.com/3r6WNW2/register.jpg"
               alt="Shoes"
               className="rounded-xl"
             />
@@ -68,7 +68,7 @@ export default function Instructions() {
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="https://i.ibb.co.com/HCgxknt/details.jpg"
               alt="Shoes"
               className="rounded-xl"
             />
@@ -92,7 +92,7 @@ export default function Instructions() {
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="https://i.ibb.co.com/ZdwWJ0d/form.jpg"
               alt="Shoes"
               className="rounded-xl"
             />
@@ -116,7 +116,7 @@ export default function Instructions() {
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="https://i.ibb.co.com/JvB0Fh5/submit-removebg-preview.png"
               alt="Shoes"
               className="rounded-xl"
             />

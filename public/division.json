@@ -1,0 +1,28 @@
+[
+  { "name": "Dhaka", "status": "3 Projects Ongoing", "color": "text-blue-500" },
+  {
+    "name": "Khulna",
+    "status": "2 Projects Completed",
+    "color": "text-green-500"
+  },
+  {
+    "name": "Chittagong",
+    "status": "5 Projects Ongoing",
+    "color": "text-blue-500"
+  },
+  {
+    "name": "Rajshahi",
+    "status": "1 Project Completed",
+    "color": "text-green-500"
+  },
+  {
+    "name": "Sylhet",
+    "status": "2 Projects Ongoing",
+    "color": "text-blue-500"
+  },
+  {
+    "name": "Barishal",
+    "status": "3 Projects Completed",
+    "color": "text-green-500"
+  }
+]

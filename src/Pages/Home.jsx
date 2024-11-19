@@ -8,7 +8,7 @@ export default function Home() {
       <div className="bg-gradient-to-t from-gray-100 to-white">
         <Banner />
       </div>
-      <div className="mb-16">
+      <div className="mb-8 md:mb-16">
         <About />
         <Outlet />
       </div>
