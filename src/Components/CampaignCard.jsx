@@ -1,4 +1,7 @@
+import { BiCommentDetail } from "react-icons/bi";
+import { PiMapPinAreaFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
+
 export default function CampaignCard({ cardData }) {
   return (
     <>
@@ -10,38 +13,40 @@ export default function CampaignCard({ cardData }) {
             className="rounded-xl object-cover"
           />
         </figure>
-        <div className="text-center flex flex-col flex-grow items-start gap-3 p-5">
+        <div className="flex flex-col flex-grow items-start gap-3 p-5">
+          <div className="bg-gray-200 rounded-lg px-5 py-2">
+            <p>
+              {cardData.status === "Active" && (
+                <span className=" text-green-500 text-base font-semibold">
+                  {cardData.status}
+                </span>
+              )}
+              {cardData.status === "Upcoming" && (
+                <span className="text-purple-600 text-base font-semibold  rounded-full px-4 py-2">
+                  {cardData.status}
+                </span>
+              )}
+              {cardData.status === "Completed" && (
+                <span className="text-red-500 text-base font-semibold  rounded-full px-4 py-2">
+                  {cardData.status}
+                </span>
+              )}
+            </p>
+          </div>
           <h2 className="text-base lg:text-xl font-semibold text-black relative">
-            {cardData.title}{" "}
-            {cardData.status === "Active" && (
-              <span className="absolute text-green-500 text-xs font-semibold -right-16 -top-2 border border-green-500 rounded-full px-3 py-1">
-                {cardData.status}
-              </span>
-            )}
-            {cardData.status === "Upcoming" && (
-              <span className="absolute text-purple-600 text-xs font-semibold -right-20 -top-3 border border-purple-600 rounded-full px-3 py-1">
-                {cardData.status}
-              </span>
-            )}
-            {cardData.status === "Completed" && (
-              <span className="absolute text-red-500 text-xs font-semibold -right-22 -top-3 border border-red-500 rounded-full px-3 py-1">
-                {cardData.status}
-              </span>
-            )}
-            {/* <span className="absolute text-green-500 text-xs font-semibold -right-16 -top-2 border border-green-500 rounded-full px-3 py-1">
-              {cardData.status}
-            </span> */}
+            {cardData.title}
           </h2>
-          <p className="text-base lg:text-lg font-semibold text-black">
-            {cardData.division} Division
+          <p className="text-base lg:text-lg font-medium text-gray-500 flex items-center gap-4">
+            <PiMapPinAreaFill /> {cardData.division}
           </p>
-          <p className="text-sm lg:text-base text-gray-600 text-justify">
+          <p className="text-sm lg:text-base text-gray-500 flex items-start gap-4">
+            <BiCommentDetail className="text-4xl" />
             {cardData.description}
           </p>
         </div>
         <div className="card-actions pb-5">
           <Link
-            to="/"
+            to={`/campaigns/${cardData.id}`}
             className="btn btn-wide bg-lightCoral text-white font-bold text-base"
           >
             Donate Now

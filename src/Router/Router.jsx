@@ -6,6 +6,7 @@ import Programs from "../Components/Programs";
 import HomeLayout from "../Layout/HomeLayout";
 import Campaigns from "../Pages/Campaigns";
 import Dashboard from "../Pages/Dashboard";
+import Details from "../Pages/Details";
 import Home from "../Pages/Home";
 import HowToHelp from "../Pages/HowToHelp";
 import Login from "../Pages/Login";
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
       {
         path: "/campaigns",
         element: <Campaigns />,
+        loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/campaigns/:id",
+        element: <Details />,
         loader: () => fetch("/data.json"),
       },
       {
