@@ -40,6 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/campaigns",
         element: <Campaigns />,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "/dashboard",

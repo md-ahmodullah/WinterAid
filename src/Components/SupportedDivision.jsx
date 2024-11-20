@@ -7,7 +7,6 @@ export default function SupportedDivision() {
       .then((res) => res.json())
       .then((data) => setDivisions(data));
   }, []);
-  console.log(divisions);
 
   return (
     <section className="py-12 md:py-20 bg-gray-100 my-20">
