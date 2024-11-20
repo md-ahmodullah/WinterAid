@@ -2,11 +2,17 @@ import { BiCommentDetail } from "react-icons/bi";
 import { MdAttachEmail } from "react-icons/md";
 import { PiMapPinAreaFill } from "react-icons/pi";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 export default function Details() {
   const data = useLoaderData();
   const { id } = useParams();
   const details = data.find((d) => d.id === Number(id));
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Thank you! We will reach your destination soon");
+    e.target.reset();
+  };
   return (
     <>
       <div className="card bg-base-100 shadow-xl items-center grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 p-4 md:p-16">
@@ -72,7 +78,7 @@ export default function Details() {
             <h2 className="text-2xl font-bold text-deepTeal text-center pt-8">
               Donation Form
             </h2>
-            <form className="card-body">
+            <form className="card-body" onSubmit={handleSubmit}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text font-semibold">
@@ -92,7 +98,7 @@ export default function Details() {
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g., 2 jackets, 3 blankets"
+                  placeholder="e.g., jackets, blankets, sweater"
                   className="input input-bordered"
                   required
                 />
