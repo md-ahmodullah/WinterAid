@@ -1,11 +1,11 @@
 export default function Banner() {
   return (
     <section className="flex flex-col-reverse lg:flex-row items-center w-10/12 mx-auto my-3 md:my-6 lg:my-16 gap-4 pb-3 md:pb-6">
-      <div className="w-full lg:w-1/2 space-y-4 lg:space-y-8">
+      <div className="w-full lg:w-1/2 space-y-4 lg:space-y-8 pb-5">
         <h1 className="text-3xl md:text-4xl lg:text-6xl text-deepTeal font-semibold">
           Share Warmth, Spread Smiles
         </h1>
-        <p className="text-base md:text-lg text-gray-500 pb-3 w-full lg:w-3/5">
+        <p className="text-base md:text-lg text-gray-500 pb-3 w-full lg:w-2/3">
           Join WinterAid to donate winter clothing, bring warmth to vulnerable
           communities, and make a difference in lives across Bangladesh.
         </p>
@@ -41,16 +41,16 @@ export default function Banner() {
           </div>
         </div>
         <div className="flex justify-center gap-2 py-2">
-          <a href="#item1" className="btn btn-xs">
+          <a href="#item1" className="btn btn-sm">
             1
           </a>
-          <a href="#item2" className="btn btn-xs">
+          <a href="#item2" className="btn btn-sm">
             2
           </a>
-          <a href="#item3" className="btn btn-xs">
+          <a href="#item3" className="btn btn-sm">
             3
           </a>
-          <a href="#item4" className="btn btn-xs">
+          <a href="#item4" className="btn btn-sm">
             4
           </a>
         </div>

@@ -8,7 +8,7 @@ export default function CollectionPoint() {
           </h2>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" defaultChecked />
-            <div className="collapse-title text-xl font-medium text-black">
+            <div className="collapse-title text-base font-medium text-black">
               Can I donate money instead of clothes?
             </div>
             <div className="collapse-content">
@@ -19,7 +19,7 @@ export default function CollectionPoint() {
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium text-black">
+            <div className="collapse-title text-base font-medium text-black">
               What types of clothes are most needed?
             </div>
             <div className="collapse-content">
@@ -28,7 +28,7 @@ export default function CollectionPoint() {
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium text-black">
+            <div className="collapse-title text-base font-medium text-black">
               Can I join with you as a volunteer?
             </div>
             <div className="collapse-content">
@@ -40,7 +40,7 @@ export default function CollectionPoint() {
           </div>
           <div className="collapse collapse-plus bg-base-200 ">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium text-black">
+            <div className="collapse-title text-base font-medium text-black">
               Do you have any other service like foods or shelter etc?
             </div>
             <div className="collapse-content">
@@ -59,7 +59,7 @@ export default function CollectionPoint() {
             <h2 className="text-xl font-semibold text-center text-deepTeal">
               Find Your Nearest Collect Points
             </h2>
-            <p className="text-gray-500 text-sm px-20 text-center">
+            <p className="text-gray-500 text-sm px-5 md:px-20 text-center">
               Provide your area longitude and lattitude info to find your
               nearset collect points
             </p>
@@ -74,14 +74,14 @@ export default function CollectionPoint() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 pt-5">
             <div className="border-l-4 rounded-2xl border-cyan-800 p-2 space-y-2">
-              <h2 className="text-lg font-semibold text-gray-600">
+              <h2 className="text-lg font-semibold text-gray-500">
                 📍 Dhaka Main Center
               </h2>
-              <p className="font-semibold text-gray-600">
+              <p className="font-semibold text-gray-500">
                 🏠 House 12, Road 5, Uttara, Dhaka
               </p>
-              <p className="font-semibold text-gray-600">📞 +880123-456-789</p>
-              <p className="font-semibold text-gray-600">
+              <p className="font-semibold text-gray-500">📞 +880123-456-789</p>
+              <p className="font-semibold text-gray-500">
                 🕒 Mon-Fri: 9 AM - 6 PM
               </p>
             </div>

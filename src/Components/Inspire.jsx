@@ -4,17 +4,17 @@ export default function Inspire() {
       <section className="w-10/12 mx-auto my-6 md:my-12 lg:my-20">
         <div className="grid grid-cols-1 lg:grid-cols-6 items-center gap-6">
           <div className="col-span-5 space-y-4">
-            <h1 className="text-5xl font-semibold text-deepTeal">
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-semibold text-deepTeal">
               Inspiring <span className="text-lightCoral">stories</span> from
               supporters
             </h1>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-sm">
               Discover heartfelt stories from our supporters, sharing their
               experiences and the impact of our work.
             </p>
           </div>
           <div>
-            <button className="btn btn-md bg-lightCoral text-faWhite font-bold rounded-full">
+            <button className="btn btn-md bg-lightCoral text-faWhite font-semibold rounded-full text-xs">
               What do you think?
             </button>
           </div>

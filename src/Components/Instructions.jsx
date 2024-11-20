@@ -1,12 +1,12 @@
 export default function Instructions() {
   return (
     <>
-      <div>
-        <h2 className="text-5xl font-semibold text-deepTeal text-center pb-5 w-full lg:w-3/5 mx-auto">
+      <div className="pt-6">
+        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-deepTeal text-center pb-5 w-full lg:w-2/3 mx-auto">
           Instructions for <span className="text-lightCoral">donation</span> and
           How it <span className="text-lightCoral">works</span>
         </h2>
-        <p className="text-center text-gray-500 w-full lg:w-1/2 mx-auto">
+        <p className="text-sm md:text-base text-center text-gray-500 w-full lg:w-1/2 mx-auto">
           Providing instructions for donation, information about collection
           points, and list supported divisions
         </p>
@@ -18,7 +18,7 @@ export default function Instructions() {
           <li className="step">Step-5 : Submit</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-5">
         <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
           <figure className="px-5 pt-5">
             <img
