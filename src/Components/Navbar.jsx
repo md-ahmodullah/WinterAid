@@ -3,8 +3,12 @@ import { FaHandsHelping } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 export default function Navbar() {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
+  const handleLogout = () => {
+    alert("logged out");
+    logOut();
+  };
   const links = (
     <>
       <NavLink to="/">Home</NavLink>
@@ -58,13 +62,23 @@ export default function Navbar() {
         </div>
         <div className="navbar-end">
           {user ? (
-            <div className="border-2 border-fuchsia-100 rounded-full py-1.5 w-12">
-              <img
-                src="https://i.ibb.co.com/0nbscck/412627369-901661941600568-1170305148117395746-n-1.jpg"
-                alt=""
-                className="rounded-full"
-              />
-            </div>
+            <>
+              <div className="border-2 border-softPeach rounded-full w-12">
+                <img
+                  src="https://i.ibb.co.com/0nbscck/412627369-901661941600568-1170305148117395746-n-1.jpg"
+                  alt=""
+                  className="rounded-full"
+                />
+              </div>
+              <div>
+                <button
+                  className="btn btn-outline text-softPeach font-semibold ml-3"
+                  onClick={handleLogout}
+                >
+                  Log Out
+                </button>
+              </div>
+            </>
           ) : (
             <Link
               to="/auth/login"
