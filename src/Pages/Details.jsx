@@ -25,7 +25,7 @@ export default function Details() {
             />
           </figure>
           <div>
-            <div className="text-center flex flex-col flex-grow items-start gap-3 p-5">
+            <div className="flex flex-col flex-grow items-start gap-3 p-5">
               <div className="bg-gray-200 rounded-lg px-5 py-2">
                 <p>
                   {details?.status === "Active" && (
@@ -45,20 +45,20 @@ export default function Details() {
                   )}
                 </p>
               </div>
-              <h2 className="text-2xl font-semibold text-black relative">
+              <h2 className="text-lg md:text-2xl font-semibold text-black">
                 {details?.title}
               </h2>
 
-              <p className="text-xl font-medium text-gray-500 flex items-center gap-4">
+              <p className="text-base md:text-xl font-medium text-gray-500 flex items-center gap-4">
                 <PiMapPinAreaFill className="text-xl" />
                 {details?.division}
               </p>
 
-              <p className="text-base text-gray-500 text-justify flex items-start gap-4">
+              <p className="text-sm md:text-base text-gray-500 text-justify flex items-start gap-4">
                 <BiCommentDetail className="text-2xl" />
                 {details?.description}
               </p>
-              <p className="text-base text-gray-500 text-justify flex items-center gap-4">
+              <p className="text-sm md:text-base text-gray-500 text-justify flex items-center gap-4">
                 <MdAttachEmail className="text-xl" />
                 {details?.contactInfo}
               </p>
@@ -66,7 +66,7 @@ export default function Details() {
             <div className="card-actions pb-5">
               <Link
                 to="/"
-                className="btn btn-md bg-lightCoral text-white font-bold text-base ml-5"
+                className="btn btn-md bg-lightCoral text-white font-medium text-base ml-5"
               >
                 Donate Now
               </Link>

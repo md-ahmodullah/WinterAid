@@ -93,7 +93,7 @@ export default function Register() {
                     type="text"
                     name="name"
                     placeholder="Nick Fury"
-                    className="grow"
+                    className="grow w-full overflow-hidden"
                     required
                   />
                 </label>

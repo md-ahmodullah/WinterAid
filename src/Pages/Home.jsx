@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <div className="bg-gradient-to-t from-gray-100 to-white">
         <Banner />
+        {/* <SwiperSS /> */}
       </div>
       <div className="mb-8 md:mb-16">
         <About />

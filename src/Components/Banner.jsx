@@ -1,7 +1,9 @@
+import SwiperSS from "./Swiper";
+
 export default function Banner() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center w-10/12 mx-auto my-3 md:my-6 lg:my-16 gap-4 pb-3 md:pb-6">
-      <div className="w-full lg:w-1/2 space-y-4 lg:space-y-8 pb-5">
+    <section className="flex flex-col lg:flex-row items-center w-10/12 mx-auto my-3 md:my-6 lg:my-16 gap-4 pb-3 md:pb-6">
+      <div className="w-full lg:w-1/2 space-y-2 lg:space-y-8 py-5">
         <h1 className="text-3xl md:text-4xl lg:text-6xl text-deepTeal font-semibold">
           Share Warmth, Spread <span className="text-lightCoral">Smiles</span>
         </h1>
@@ -13,7 +15,7 @@ export default function Banner() {
           Make a Donation
         </button>
       </div>
-      <div className="w-full lg:w-1/2 p-1 md:p-5">
+      {/* <div className="w-full lg:w-1/2 p-1 md:p-5">
         <div className="carousel">
           <div id="item1" className="carousel-item w-full">
             <img
@@ -54,6 +56,9 @@ export default function Banner() {
             4
           </a>
         </div>
+      </div> */}
+      <div className="w-full lg:w-1/2 p-1 md:p-5">
+        <SwiperSS />
       </div>
     </section>
   );
