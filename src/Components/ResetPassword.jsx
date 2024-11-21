@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 export default function ResetPassword() {
@@ -25,7 +25,7 @@ export default function ResetPassword() {
       <div className="my-6 py-5 lg:py-16">
         <div className="card bg-base-100 w-4/5 md:w-1/2 lg:w-1/3 mx-auto shrink-0 shadow-2xl">
           <div className="text-center px-5 py-5">
-            <h1 className="text-xxl font-bold text-deepTeal">
+            <h1 className="text-xl font-bold text-deepTeal">
               Forgot Password?
             </h1>
           </div>
@@ -61,6 +61,14 @@ export default function ResetPassword() {
                 </button>
               </div>
             </form>
+          </div>
+          <div className="pb-5 text-center">
+            <Link
+              to="/auth/login"
+              className="text-lg underline font-medium text-deepTeal"
+            >
+              Back To Home
+            </Link>
           </div>
         </div>
       </div>

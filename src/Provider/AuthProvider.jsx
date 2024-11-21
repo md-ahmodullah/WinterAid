@@ -21,9 +21,14 @@ export default function AuthProvider({ children }) {
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
+
   // login User
   const loginUser = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
+  };
+  // SignIn with google
+  const signInWithGoogle = () => {
+    return signInWithPopup(auth, googleProvider);
   };
   // Observer
   useEffect(() => {
@@ -47,10 +52,7 @@ export default function AuthProvider({ children }) {
   const logOut = () => {
     return signOut(auth);
   };
-  // SignIn with google
-  const signInWithGoogle = () => {
-    return signInWithPopup(auth, googleProvider);
-  };
+
   const authInfo = {
     user,
     setUser,

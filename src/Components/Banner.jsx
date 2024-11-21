@@ -3,7 +3,7 @@ export default function Banner() {
     <section className="flex flex-col-reverse lg:flex-row items-center w-10/12 mx-auto my-3 md:my-6 lg:my-16 gap-4 pb-3 md:pb-6">
       <div className="w-full lg:w-1/2 space-y-4 lg:space-y-8 pb-5">
         <h1 className="text-3xl md:text-4xl lg:text-6xl text-deepTeal font-semibold">
-          Share Warmth, Spread Smiles
+          Share Warmth, Spread <span className="text-lightCoral">Smiles</span>
         </h1>
         <p className="text-base md:text-lg text-gray-500 pb-3 w-full lg:w-2/3">
           Join WinterAid to donate winter clothing, bring warmth to vulnerable

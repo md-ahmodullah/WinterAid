@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 export default function Register() {
-  const { user, setUser, createUser, signInWithGoogle, updateUserProfile } =
+  const { user, setUser, createUser, signInWithGoogle } =
     useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const [errMessage, setErrMessage] = useState("");
@@ -47,9 +47,15 @@ export default function Register() {
       });
   };
 
-  const handleGoogleSignup = () => {
+  const handleGoogleSignup = (e) => {
+    e.preventDefault();
     signInWithGoogle()
-      .then((result) => navigate("/"))
+      .then((result) => {
+        const user = result.user;
+
+        setUser(user);
+        navigate("/");
+      })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message.split("auth/")[1];
@@ -66,7 +72,7 @@ export default function Register() {
   return (
     <>
       <div className="my-6 py-5 lg:py-16">
-        <div className="card bg-base-100 w-4/5 md:w-1/2 lg:w-2/5 mx-auto shrink-0 shadow-2xl">
+        <div className="card bg-base-100 w-5/6 md:w-1/2 lg:w-2/5 mx-auto shrink-0 shadow-2xl">
           <div className="text-center px-5 py-3">
             <h1 className="text-2xl font-bold text-deepTeal">Register</h1>
           </div>

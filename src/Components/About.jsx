@@ -16,7 +16,11 @@ export default function About() {
           impactful change.
         </p>
       </div>
-      <div className="about flex flex-col lg:flex-row justify-center text-deepTeal">
+      <div
+        className="about flex flex-col lg:flex-row justify-center text-deepTeal"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <NavLink
           to="/"
           className="flex items-center gap-4 p-4 bg-gray-100 rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl"

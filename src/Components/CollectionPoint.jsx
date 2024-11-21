@@ -1,11 +1,20 @@
+import { BsQuestionCircleFill } from "react-icons/bs";
+import { FaTruckFast } from "react-icons/fa6";
 export default function CollectionPoint() {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
-        <div className="border-2 border-gray-200 p-4 space-y-5 rounded-xl">
-          <h2 className="text-xl font-semibold text-center text-deepTeal border-b-2 border-gray-200 pb-2">
-            Common FAQs
-          </h2>
+        <div
+          className="border-2 border-gray-200 p-4 space-y-5 rounded-xl"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div className="flex items-center justify-center gap-3 border-b-2 border-gray-200 pb-3">
+            <BsQuestionCircleFill className="text-2xl text-gray-500" />
+            <h2 className="text-xl font-semibold text-center text-deepTeal">
+              Common FAQs
+            </h2>
+          </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" defaultChecked />
             <div className="collapse-title text-base font-medium text-black">
@@ -51,14 +60,22 @@ export default function CollectionPoint() {
             </div>
           </div>
         </div>
-        <div className="border-2 border-gray-200 p-3 space-y-3 rounded-xl">
+        <div
+          className="border-2 border-gray-200 p-3 space-y-3 rounded-xl"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           {/* <h1 className="text-xl font-semibold text-center border-b-2 pb-2 text-black">
             Collection Points
           </h1> */}
           <div className="flex flex-col items-center gap-3">
-            <h2 className="text-xl font-semibold text-center text-deepTeal">
-              Find Your Nearest Collect Points
-            </h2>
+            <div className="flex items-center">
+              <h2 className="text-xl font-semibold text-center text-deepTeal">
+                Find Your Nearest Collect Points
+              </h2>
+              <FaTruckFast className="text-4xl text-lightCoral pl-3" />
+            </div>
+
             <p className="text-gray-500 text-sm px-5 md:px-20 text-center">
               Provide your area longitude and lattitude info to find your
               nearset collect points

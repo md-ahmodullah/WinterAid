@@ -47,7 +47,11 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="px-5 md:px-12">
-          <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
+          <div
+            className="card bg-base-100 w-full shrink-0 shadow-2xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <form className="card-body">
               <div className="form-control">
                 <label className="label">

@@ -19,7 +19,11 @@ export default function Instructions() {
         </ul>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-5">
-        <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
+        <div
+          className="card bg-base-100 shadow-xl items-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <figure className="px-5 pt-5">
             <img
               src="https://i.ibb.co.com/C28NJMj/browse-removebg-preview.png"
@@ -42,7 +46,11 @@ export default function Instructions() {
             </button>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
+        <div
+          className="card bg-base-100 shadow-xl items-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <figure className="px-5 pt-5">
             <img
               src="https://i.ibb.co.com/3r6WNW2/register.jpg"
@@ -66,7 +74,11 @@ export default function Instructions() {
             </button>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
+        <div
+          className="card bg-base-100 shadow-xl items-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <figure className="px-5 pt-5">
             <img
               src="https://i.ibb.co.com/HCgxknt/details.jpg"
@@ -89,7 +101,11 @@ export default function Instructions() {
             </button>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
+        <div
+          className="card bg-base-100 shadow-xl items-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <figure className="px-5 pt-5">
             <img
               src="https://i.ibb.co.com/ZdwWJ0d/form.jpg"
@@ -113,7 +129,10 @@ export default function Instructions() {
             </button>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-xl items-center transform transition-transform duration-700 hover:scale-125">
+        <div
+          className="card bg-base-100 shadow-xl items-center "
+          data-aos="fade-up"
+        >
           <figure className="px-5 pt-5">
             <img
               src="https://i.ibb.co.com/JvB0Fh5/submit-removebg-preview.png"

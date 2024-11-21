@@ -20,7 +20,11 @@ export default function Inspire() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-14">
-          <div className="card bg-base-100 shadow-xl">
+          <div
+            className="card bg-base-100 shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="card-body">
               <h2 className="card-title pb-4">Empowering change</h2>
               <p className="text-gray-500">
@@ -44,7 +48,11 @@ export default function Inspire() {
               </div>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-xl">
+          <div
+            className="card bg-base-100 shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="card-body">
               <h2 className="card-title pb-4">Inspiring commitment</h2>
               <p className="text-gray-500">
@@ -68,7 +76,11 @@ export default function Inspire() {
               </div>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-xl">
+          <div
+            className="card bg-base-100 shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="card-body">
               <h2 className="card-title pb-4">Impactful work</h2>
               <p className="text-gray-500">

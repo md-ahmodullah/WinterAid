@@ -1,6 +1,10 @@
 export default function Mission() {
   return (
-    <div className="hero bg-base-200 w-10/12 mx-auto rounded-xl p-5 md:p-8">
+    <div
+      className="hero bg-base-200 w-10/12 mx-auto rounded-xl p-5 md:p-8"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
       <div className="flex flex-col lg:flex-row-reverse justify-evenly">
         <img
           src="https://i.ibb.co.com/PG07xsb/image5.jpg"
