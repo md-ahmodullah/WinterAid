@@ -17,10 +17,18 @@ export default function Footer() {
               running in the most remote areas, and much more.
             </p>
             <div className="text-softPeach text-xl flex items-center justify-center gap-5 pt-4">
-              <MdOutlineFacebook />
-              <AiFillInstagram />
-              <FaTwitter />
-              <FaLinkedin />
+              <a href="https://www.facebook.com/">
+                <MdOutlineFacebook />
+              </a>
+              <a href="https://www.instagram.com/">
+                <AiFillInstagram />
+              </a>
+              <a href="https://twitter.com/">
+                <FaTwitter />
+              </a>
+              <a href="https://www.linkedin.com/">
+                <FaLinkedin />
+              </a>
             </div>
           </aside>
           <nav className="text-faWhite">

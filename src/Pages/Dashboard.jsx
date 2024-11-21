@@ -18,7 +18,10 @@ export default function Dashboard() {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src={user?.photoURL}
+            src={
+              user?.photoURL ||
+              "https://i.ibb.co.com/LkbJtNr/istockphoto-1300845620-612x612.jpg"
+            }
             alt={user?.displayName}
             className="w-32 h-32 rounded-full shadow-md mb-4"
           />

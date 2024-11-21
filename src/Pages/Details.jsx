@@ -45,11 +45,11 @@ export default function Details() {
                   )}
                 </p>
               </div>
-              <h2 className="text-lg md:text-2xl font-semibold text-black">
+              <h2 className="text-lg md:text-xl font-semibold text-black">
                 {details?.title}
               </h2>
 
-              <p className="text-base md:text-xl font-medium text-gray-500 flex items-center gap-4">
+              <p className="text-base md:text-lg font-medium text-gray-500 flex items-center gap-4">
                 <PiMapPinAreaFill className="text-xl" />
                 {details?.division}
               </p>

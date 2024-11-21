@@ -7,7 +7,7 @@ export default function Banner() {
         <h1 className="text-3xl md:text-4xl lg:text-6xl text-deepTeal font-semibold">
           Share Warmth, Spread <span className="text-lightCoral">Smiles</span>
         </h1>
-        <p className="text-base md:text-lg text-gray-500 pb-3 w-full lg:w-2/3">
+        <p className="text-sm md:text-base text-gray-500 pb-3 w-full lg:w-2/3">
           Join WinterAid to donate winter clothing, bring warmth to vulnerable
           communities, and make a difference in lives across Bangladesh.
         </p>

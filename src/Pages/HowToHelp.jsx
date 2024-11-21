@@ -32,7 +32,7 @@ export default function HowToHelp() {
 
   return (
     <section className="w-11/12 mx-auto py-12 px-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+      <h2 className="text-3xl font-bold text-center text-deepTeal mb-8">
         Success Stories
       </h2>
       <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">

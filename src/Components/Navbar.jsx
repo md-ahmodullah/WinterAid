@@ -63,8 +63,15 @@ export default function Navbar() {
         <div className="navbar-end">
           {user ? (
             <>
-              <div className="border-2 border-softPeach rounded-full w-12">
-                <img src={user?.photoURL} alt="" className="rounded-full" />
+              <div className="border-2 border-softPeach rounded-full w-10 object-cover px-1">
+                <img
+                  src={
+                    user?.photoURL ||
+                    "https://i.ibb.co.com/LkbJtNr/istockphoto-1300845620-612x612.jpg"
+                  }
+                  alt=""
+                  className="rounded-full"
+                />
               </div>
               <div>
                 <button

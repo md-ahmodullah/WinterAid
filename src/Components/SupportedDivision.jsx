@@ -10,7 +10,7 @@ export default function SupportedDivision() {
 
   return (
     <section className="py-12 md:py-20 bg-gray-100 my-20">
-      <div className="text-center pb-6">
+      <div className="text-center pb-6 w-11/12 mx-auto">
         <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-deepTeal pb-5">
           Support <span className="text-lightCoral">our mission</span>, change
           lives today

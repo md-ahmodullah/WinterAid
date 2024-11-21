@@ -19,6 +19,7 @@ export default function Register() {
     const photoURL = data.get("photo");
     const email = data.get("email");
     const password = data.get("password");
+    console.log(name, photoURL, email, password);
 
     const validation = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!validation.test(password)) {
@@ -29,9 +30,15 @@ export default function Register() {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-        setUser(user);
+        const newUser = {
+          displayName: name,
+          photoURL: photoURL,
+          email: email,
+          password: password,
+        };
+        setUser(newUser);
         console.log(name, photoURL);
-        console.log(user);
+        console.log(newUser);
 
         updateUserProfile({ displayName: name, photoURL: photoURL })
           .then((result) => {
@@ -77,11 +84,11 @@ export default function Register() {
   return (
     <>
       <div className="my-6 py-5 lg:py-16">
-        <div className="card bg-base-100 w-5/6 md:w-1/2 lg:w-2/5 mx-auto shrink-0 shadow-2xl">
+        <div className="card bg-base-100 w-full md:w-1/2 lg:w-2/5 mx-auto shrink-0 shadow-2xl">
           <div className="text-center px-5 py-3">
             <h1 className="text-2xl font-bold text-deepTeal">Register</h1>
           </div>
-          <div className="px-7 py-3 space-y-2">
+          <div className="px-5 py-3 space-y-2">
             <form onSubmit={handleSubmit}>
               <div className="form-control">
                 <label className="label">
@@ -93,7 +100,7 @@ export default function Register() {
                     type="text"
                     name="name"
                     placeholder="Nick Fury"
-                    className="grow w-full overflow-hidden"
+                    className="grow"
                     required
                   />
                 </label>
@@ -161,9 +168,15 @@ export default function Register() {
                     required
                   />
                   {isShow ? (
-                    <FaEyeSlash onClick={handleShow} />
+                    <FaEyeSlash
+                      className="text-xl md:text-lg"
+                      onClick={handleShow}
+                    />
                   ) : (
-                    <FaEye onClick={handleShow} />
+                    <FaEye
+                      className="text-xl md:text:lg"
+                      onClick={handleShow}
+                    />
                   )}
                 </label>
               </div>

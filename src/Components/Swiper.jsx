@@ -30,7 +30,7 @@ export default function SwiperSS() {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>

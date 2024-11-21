@@ -33,13 +33,13 @@ export default function CampaignCard({ cardData }) {
               )}
             </p>
           </div>
-          <h2 className="text-base lg:text-xl font-semibold text-black relative">
+          <h2 className="text-base lg:text-lg font-semibold text-black relative">
             {cardData.title}
           </h2>
-          <p className="text-base lg:text-lg font-medium text-gray-500 flex items-center gap-4">
+          <p className="text-sm lg:text-base font-medium text-gray-500 flex items-center gap-4">
             <PiMapPinAreaFill /> {cardData.division}
           </p>
-          <p className="text-sm lg:text-base text-gray-500 flex items-start gap-4">
+          <p className="text-xs lg:text-sm text-gray-500 flex items-start gap-4">
             <BiCommentDetail className="text-4xl" />
             {cardData.description}
           </p>

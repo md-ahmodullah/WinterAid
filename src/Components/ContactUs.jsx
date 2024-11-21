@@ -16,33 +16,29 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h1 className="font-semibold text-lg">Main phone number</h1>
-              <p className="text-gray-500 font-semibold">
+              <p className="text-gray-500 font-medium">
                 1-800-CHARITY (1-800-242-7489)
               </p>
             </div>
             <div>
-              <h1 className="font-semibold text-lg">
-                Training & certification
-              </h1>
-              <p className="text-gray-500 font-semibold">
+              <h1 className="font-medium text-lg">Training & certification</h1>
+              <p className="text-gray-500 font-medium">
                 Please visit the training section
               </p>
             </div>
             <div>
-              <h1 className="font-semibold text-lg">For donation related</h1>
-              <p className="text-gray-500 font-semibold">
+              <h1 className="font-medium text-lg">For donation related</h1>
+              <p className="text-gray-500 font-medium">
                 Please visit the donation section
               </p>
             </div>
             <div>
-              <h1 className="font-semibold text-lg">Email address</h1>
-              <p className="text-gray-500 font-semibold">
-                support@winteraid.org
-              </p>
+              <h1 className="font-medium text-lg">Email address</h1>
+              <p className="text-gray-500 font-medium">support@winteraid.org</p>
             </div>
             <div>
-              <h1 className="font-semibold text-lg">Find our locations</h1>
-              <p className="text-gray-500 font-semibold">Search on the map</p>
+              <h1 className="font-medium text-lg">Find our locations</h1>
+              <p className="text-gray-500 font-medium">Search on the map</p>
             </div>
           </div>
         </div>
