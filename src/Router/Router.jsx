@@ -14,6 +14,7 @@ import Home from "../Pages/Home";
 import HowToHelp from "../Pages/HowToHelp";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import UpdateProfile from "../Pages/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
   {
     path: "/reset-password",
     element: <ResetPassword />,
+  },
+  {
+    path: "/update-profile",
+    element: <UpdateProfile />,
   },
 ]);
 

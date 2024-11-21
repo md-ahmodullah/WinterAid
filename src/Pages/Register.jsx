@@ -31,19 +31,27 @@ export default function Register() {
         const user = result.user;
         setUser(user);
         console.log(name, photoURL);
+        console.log(user);
 
         updateUserProfile({ displayName: name, photoURL: photoURL })
-          .then(() => {
+          .then((result) => {
+            const newUser = result.user;
+            setUser(newUser);
             navigate("/");
           })
-          .catch((err) => {
-            console.log(err);
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message?.split("auth/")[1];
+            const displayError = errorMessage?.split(").")[0];
+            setErrMessage(displayError);
           });
         navigate("/");
       })
       .catch((error) => {
         const errorCode = error.code;
-        console.log(error.message);
+        const errorMessage = error.message?.split("auth/")[1];
+        const displayError = errorMessage?.split(").")[0];
+        setErrMessage(displayError);
       });
   };
 
@@ -52,7 +60,6 @@ export default function Register() {
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
-
         setUser(user);
         navigate("/");
       })
@@ -66,8 +73,6 @@ export default function Register() {
   const handleShow = () => {
     setIsShow(!isShow);
   };
-
-  console.log(user);
 
   return (
     <>

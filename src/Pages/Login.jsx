@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 export default function Login() {
   const navigate = useNavigate();
-  const { loginUser, signInWithGoogle, passwordResetMailSend } =
+  const { loginUser, signInWithGoogle, passwordResetMailSend, user, setUser } =
     useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const [errMessage, setErrMessage] = useState("");
@@ -25,6 +25,8 @@ export default function Login() {
 
     loginUser(email, password)
       .then((result) => {
+        const newUser = result.user;
+        setUser(newUser);
         navigate("/");
       })
       .catch((error) => {
