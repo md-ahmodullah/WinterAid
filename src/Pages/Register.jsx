@@ -1,11 +1,13 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle, FaLink } from "react-icons/fa";
+import { IoWarning } from "react-icons/io5";
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 export default function Register() {
-  const { createUser } = useContext(AuthContext);
+  const { user, setUser, createUser, signInWithGoogle, updateUserProfile } =
+    useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const [errMessage, setErrMessage] = useState("");
   const navigate = useNavigate();
@@ -17,16 +19,39 @@ export default function Register() {
     const photoURL = data.get("photo");
     const email = data.get("email");
     const password = data.get("password");
-    console.log({ name, photoURL, email, password });
+
+    const validation = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    if (!validation.test(password)) {
+      setErrMessage("Must be at least 6 char including upper & lower case");
+      return;
+    }
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        const user = result.user;
+        setUser(user);
+        console.log(name, photoURL);
+
+        updateUserProfile({ displayName: name, photoURL: photoURL })
+          .then(() => {
+            navigate("/");
+          })
+          .catch((err) => {
+            console.log(err);
+          });
         navigate("/");
       })
       .catch((error) => {
         const errorCode = error.code;
         console.log(error.message);
+      });
+  };
+
+  const handleGoogleSignup = () => {
+    signInWithGoogle()
+      .then((result) => navigate("/"))
+      .catch((error) => {
+        const errorCode = error.code;
         const errorMessage = error.message.split("auth/")[1];
         const displayError = errorMessage.split(").")[0];
         setErrMessage(displayError);
@@ -35,6 +60,9 @@ export default function Register() {
   const handleShow = () => {
     setIsShow(!isShow);
   };
+
+  console.log(user);
+
   return (
     <>
       <div className="my-6 py-5 lg:py-16">
@@ -140,11 +168,21 @@ export default function Register() {
                 </span>
               </div>
               <div className="flex w-full flex-col border-opacity-50 form-control mt-6">
+                <div>
+                  {errMessage && (
+                    <span className="text-xs text-red-500 flex items-center gap-1 pb-3">
+                      <IoWarning className="text-2xl" /> {errMessage}
+                    </span>
+                  )}
+                </div>
                 <button className="btn bg-lightCoral font-semibold text-faWhite">
                   Register
                 </button>
                 <div className="divider">OR</div>
-                <button className="btn btn-outline mb-3 text-lightCoral">
+                <button
+                  onClick={handleGoogleSignup}
+                  className="btn btn-outline mb-3 text-lightCoral"
+                >
                   <FaGoogle /> Sign Up with Google
                 </button>
               </div>

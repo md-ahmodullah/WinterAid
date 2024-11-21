@@ -1,20 +1,27 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { IoWarning } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 export default function Login() {
   const navigate = useNavigate();
-  const { loginUser, signInWithGoogle } = useContext(AuthContext);
+  const { loginUser, signInWithGoogle, passwordResetMailSend } =
+    useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const [errMessage, setErrMessage] = useState("");
+  const emailRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
     const email = data.get("email");
     const password = data.get("password");
-    console.log({ email, password });
+
+    const validation = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    if (!validation.test(password)) {
+      setErrMessage("Must be at least 6 char including upper & lower case");
+      return;
+    }
 
     loginUser(email, password)
       .then((result) => {
@@ -22,7 +29,6 @@ export default function Login() {
       })
       .catch((error) => {
         const errorCode = error.code;
-        console.log(error.message);
         const errorMessage = error.message.split("auth/")[1];
         const displayError = errorMessage.split(").")[0];
         setErrMessage(displayError);
@@ -34,11 +40,14 @@ export default function Login() {
       .then((result) => navigate("/"))
       .catch((error) => {
         const errorCode = error.code;
-        console.log(error.message);
         const errorMessage = error.message.split("auth/")[1];
         const displayError = errorMessage.split(").")[0];
         setErrMessage(displayError);
       });
+  };
+
+  const handleForgotPassword = () => {
+    const email = emailRef.current.value;
   };
 
   const handleShow = () => {
@@ -72,6 +81,8 @@ export default function Login() {
                     name="email"
                     className="grow"
                     placeholder="Email"
+                    ref={emailRef}
+                    required
                   />
                 </label>
               </div>
@@ -97,6 +108,7 @@ export default function Login() {
                     name="password"
                     className="grow"
                     placeholder="password"
+                    required
                   />
                   {isShow ? (
                     <FaEyeSlash onClick={handleShow} />
@@ -105,9 +117,14 @@ export default function Login() {
                   )}
                 </label>
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <Link
+                    to="/reset-password"
+                    href="#"
+                    className="label-text-alt link link-hover"
+                    onClick={handleForgotPassword}
+                  >
                     Forgot password?
-                  </a>
+                  </Link>
                 </label>
               </div>
               <div className="flex w-full flex-col border-opacity-50 form-control mt-2">

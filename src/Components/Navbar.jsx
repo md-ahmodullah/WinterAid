@@ -13,8 +13,8 @@ export default function Navbar() {
     <>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/campaigns">Campaigns</NavLink>
-      <NavLink to="/dashboard">Dashboard</NavLink>
       <NavLink to="/how-to-help">How to Help</NavLink>
+      {user && <NavLink to="/dashboard">Dashboard</NavLink>}
     </>
   );
   return (
